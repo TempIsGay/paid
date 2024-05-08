@@ -1,6 +1,6 @@
 local ui_options = {
-	main_color = Color3.fromRGB(191, 86, 127),
-	min_size = Vector2.new(400, 365),
+	main_color = Color3.fromRGB(41, 74, 122),
+	min_size = Vector2.new(400, 300),
 	toggle_key = Enum.KeyCode.RightShift,
 	can_resize = true,
 }
@@ -141,7 +141,7 @@ Toggle.Position = UDim2.new(0, 5, 0, -2)
 Toggle.Rotation = 90
 Toggle.Size = UDim2.new(0, 20, 0, 20)
 Toggle.ZIndex = 2
-Toggle.Image = ""
+Toggle.Image = "https://www.roblox.com/Thumbs/Asset.ashx?width=420&height=420&assetId=4731371541"
 
 Base.Name = "Base"
 Base.Parent = Bar
@@ -346,7 +346,7 @@ Indicator_2.Position = UDim2.new(0.899999976, -10, 0.100000001, 0)
 Indicator_2.Rotation = -90
 Indicator_2.Size = UDim2.new(0, 15, 0, 15)
 Indicator_2.ZIndex = 2
-Indicator_2.Image = ""
+Indicator_2.Image = "https://www.roblox.com/Thumbs/Asset.ashx?width=420&height=420&assetId=4744658743"
 
 Box.Name = "Box"
 Box.Parent = Dropdown
@@ -446,7 +446,7 @@ Toggle_2.BackgroundColor3 = Color3.new(1, 1, 1)
 Toggle_2.BackgroundTransparency = 1
 Toggle_2.Position = UDim2.new(0, 5, 0, 0)
 Toggle_2.Size = UDim2.new(0, 20, 0, 20)
-Toggle_2.Image = ""
+Toggle_2.Image = "https://www.roblox.com/Thumbs/Asset.ashx?width=420&height=420&assetId=4731371541"
 
 Objects_2.Name = "Objects"
 Objects_2.Parent = Folder
@@ -917,7 +917,7 @@ local function ripple(button, x, y)
 end
 
 local windows = 0
-library = {}
+local library = {}
 
 local function format_windows()
 	local ull = Prefabs:FindFirstChild("UIListLayout"):Clone()
@@ -1224,7 +1224,7 @@ function library:AddWindow(title, options)
 						callback = typeof(callback) == "function" and callback or function()end
 						textbox_options = typeof(textbox_options) == "table" and textbox_options or {["clear"] = true}
 						textbox_options = {
-							["clear"] = ((textbox_options.clear) == false)
+							["clear"] = ((textbox_options.clear) == true)
 						}
 
 						local textbox = Prefabs:FindFirstChild("TextBox"):Clone()
